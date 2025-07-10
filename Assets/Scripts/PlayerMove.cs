@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerMove : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private SpriteRenderer sprite;
 
     [SerializeField] private float moveSpeed;
 
@@ -17,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();    
+        sprite = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -27,6 +29,14 @@ public class PlayerMove : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
+        if (context.ReadValue<Vector2>().x < 0)
+        {
+            sprite.flipX = false;
+        }
+        else if (context.ReadValue<Vector2>().x > 0)
+        {
+            sprite.flipX = true;
+        }
         horizontalMovement = context.ReadValue<Vector2>().x;
     }
 

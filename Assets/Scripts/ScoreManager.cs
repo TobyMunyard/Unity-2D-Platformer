@@ -6,8 +6,11 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance;
 
     public int totalCoins = 0;
+    public int totalDeaths = 0;
 
     [SerializeField] private TMP_Text text;
+    [SerializeField] private TMP_Text deathText;
+
 
     void Awake()
     {
@@ -21,6 +24,11 @@ public class ScoreManager : MonoBehaviour
     {
         totalCoins += amount;
         text.text = "Score: " + totalCoins;
-        Debug.Log("Coins: " + totalCoins);
+    }
+
+    public void AddDeath()
+    {
+        totalDeaths += 1;
+        deathText.text = "Deaths: " + totalDeaths;
     }
 }

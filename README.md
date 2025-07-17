@@ -1,5 +1,5 @@
 # Unity-2D-Platformer
-A farewell project to Unity for now as I am moving to Unreal Engine 5 to test out 3D games in much more depth. This project was largely done to ensure I haven't forgotten how to work on 2D games in case I choose to return or need these skills for work/interviews in the future. It's incredibly simple and not meant to represent the extent of my skills but rather to show that I have worked on 2D games and know how they work.
+A farewell project to Unity for now as I am moving to Unreal Engine 5 to test out 3D games in much more depth. This project was largely done to ensure I haven't forgotten how to work on 2D games in case I choose to return or need these skills for work/interviews in the future. It's incredibly simple and was made in the space of only a couple hours. **This is NOT meant to represent the extent of my skills but rather to show that I have worked on 2D games and know how they work**.
 
 ## Learned/Refreshed
 * Unity's UI System
